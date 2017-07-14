@@ -20,10 +20,10 @@
         "yiisoft/yii2-swiftmailer": "*",
         "kartik-v/yii2-widget-datepicker": "*",
         "kartik-v/yii2-field-range": "*",
-        "facebook/php-sdk-v4" : "~5.0"
+        "facebook/graph-sdk" : "*",
+        "codeception/codeception": "^2.3"
     },
     "require-dev": {
-        "yiisoft/yii2-codeception": "*",
         "yiisoft/yii2-debug": "*",
         "yiisoft/yii2-gii": "*",
         "yiisoft/yii2-faker": "*"
@@ -49,9 +49,11 @@
                 "config/web.php"
             ]
         },
-        "asset-installer-paths": {
-            "npm-asset-library": "vendor/npm",
-            "bower-asset-library": "vendor/bower"
-        }
+        "repositories": [
+            {
+                "type": "composer",
+                "url": "https://asset-packagist.org"
+            }
+        ]
     }
 }

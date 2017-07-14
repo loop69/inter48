@@ -11,6 +11,10 @@ return [
     'name' => 'Ростовская специальная школа-интернат №48',
     'language'=>'ru-RU',
     'basePath' => dirname(__DIR__),
+    'aliases' => [
+        '@bower' => '@vendor/bower-asset',
+        '@npm'   => '@vendor/npm-asset',
+    ],
     'bootstrap' => [
         'log',
         'app\modules\admin\Bootstrap',
